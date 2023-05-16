@@ -44,9 +44,9 @@ def tranform(fileName):
             df['timestamp']+"id_/"+df['original']
             
         csv_name = fileName.split('.txt')[0]    
-        os.mkdir('./CSV/{}'.format(csv_name))
+      
 
-        df.to_csv('./CSV/{}/{}.csv'.format(csv_name, csv_name))
+        df.to_csv('./CSV/{}.csv'.format( csv_name))
 
     
     except Exception as e:
